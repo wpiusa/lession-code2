@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+        <title>CSS Selectors</title>
+		<style>	
+
+			/* id and class selector */
+			#one.two { color: red; }
+			
+			/* double class selector */
+			.three.four { color: green; }
+			
+			/* more examples */
+			.box { width: 1000px;min-height:100px;margin: 0 10px 10px 0; }
+			.red { color: red; background: pink; }
+			.blue { color: blue; background: blue; }
+			.green { color: green; background: green; }
+			.border { border: 5px solid black; }
+			
+		</style>
+
+        <!-- HTML5 shim for IE8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+			<script src=“https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js”></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+	<h1 id="one" class="two">This Should Be Red</h1>
+	
+	<h1 class="three four">Double Class</h1>
+    
+	<div class="red border box"></div>
+	<div class="blue border box"></div>
+	<div class="green border box"></div>
+	<div class="red box"></div>
+	<div class="blue box"></div>
+	<div class="green box"></div>
+	<div class="border box"></div>
+
+</body>
+
+</html>

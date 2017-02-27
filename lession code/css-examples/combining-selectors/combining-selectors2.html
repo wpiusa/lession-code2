@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Combining selcetor</title>
+     <style type="text/css">
+        /* id and class */
+     	#one.two{
+          color:red;
+     	}
+     	/* Double class*/
+        .three.four{
+          color: green;
+        }
+        /* Red border box*/
+        .box{
+          width: 1000px;
+          min-height: 100px;
+          margin:0 10px 10px 0;
+        }
+        .red{
+        	color: red;
+        	background: pink;
+        }
+        .green{
+        	color:red;
+        	background:green 
+        }
+        .blue{
+        	color: blue;
+        	background: blue;
+        }
+        .border{
+        	border: 5px solid black;
+        }
+     </style>
+	<!-- HTML5 shim for IE8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+			<script src=“https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js”></script>
+		<![endif]-->
+
+</head>
+<body>
+    <h1 id="one" class="two">This should be Red</h1>
+    <h1 class="three four"> Double class</h1>
+    <div class="red border box"> red border box
+    	
+    </div>
+
+    <div class="green border box"> green border box
+    	
+    </div>
+    <div class="red box">
+    	
+    </div>
+    <div class="blue box">
+    	
+    </div>
+    <div class="green box">
+    	
+    </div>
+    <div class="border box">
+    	
+    </div>
+</body>
+</html>

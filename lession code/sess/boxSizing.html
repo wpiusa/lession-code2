@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Box Sizing</title>
+		<style>
+			body{
+				background-color:#244D6B
+			}
+			div{
+				float:left;
+			}
+			
+			h1{
+				color:#fff;
+			}
+			
+			.center{
+				text-align:center;
+			}
+			
+			.container{
+				width:100%;
+				height:250px;
+			}
+			
+			.container>div{
+				height:100%;
+				
+			}
+			
+			.marginBuffer{
+				width:10%				
+			}
+			
+			.demo{
+				width:35%;
+				background-color:#fff;
+				padding:5px;
+				margin:5px;
+				border:2px solid grey;
+			}
+			
+			/*padding margin border includes the width of the DOM*/
+			.borderBox{
+				box-sizing: border-box;
+			}
+			/*padding margin border excludes the width of the DOM*/
+			.contentBox{
+				box-sizing: content-box;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<h1 class="center">Example displaying box sizing</h1>
+		<div class="container">
+			<div class="marginBuffer"></div>
+			<div class="demo borderBox"><h2> Border Box</h2></div>
+			<div class="marginBuffer"></div>
+			<div class="demo contentBox"><h2>Content Box</h2></div>
+			<div class="marginBuffer"></div>
+		</div>
+	</body>
+</html>

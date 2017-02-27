@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Skew</title>
+		<style>	
+			body{
+				background-color:#244D6B
+			}
+			div{
+				float:left;
+			}
+			
+			h1{
+				color:#fff;
+			}
+			.center{
+				text-align:center;
+			}
+			
+			.container{
+				width:100%;
+				height:250px;
+			}
+			
+			.container>div{
+				height:100%;
+				
+			}
+			
+			.marginBuffer{
+				width:10%				
+			}
+			
+			.demo{
+				width:35%;
+				background-color:#fff;
+				padding:5px;
+				margin:5px;
+				border:2px solid grey;
+			}
+			
+			#element{
+				width:100px;
+				height:50px;
+				background-color:#C8252B;
+				border:2px solid grey;
+				margin:100px;
+				/* rotate(x,y)*/
+				transform:scale(1,1);
+			}
+			
+		</style>
+		<script type="text/javascript">
+			function setTransform(element){
+				var rotateValue = element.value;
+				document.getElementById('element').style.transform = rotateValue;
+			}
+		</script>
+	</head>
+	<body>
+		<h1 class="center">Example displaying skew property</h1>
+		<div class="container">
+			<div class="marginBuffer"></div>
+			<div class="demo">
+				<input type="radio" name="transform" value="skew(10deg,10deg)" onclick="setTransform(this)">skew(10deg,10deg)</br>
+				<input type="radio" name="transform" value="skew(30deg,40deg)" onclick="setTransform(this)">skew(30deg,40deg)</br>
+				<input type="radio" name="transform" value="skew(20deg,20deg)" onclick="setTransform(this)">skew(20deg,20deg)</br>
+				<input type="radio" name="transform" value="skew(0deg,0deg)" onclick="setTransform(this)" checked>skew(0deg,0deg)</br>
+			</div>
+			<div class="marginBuffer"></div>
+			<div class="demo">
+				<div id="element"></div>
+			</div>
+			<div class="marginBuffer"></div>
+		</div>
+	</body>
+</html>

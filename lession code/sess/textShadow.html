@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Text Shadow</title>
+		<style>
+			body{
+				background-color:#244D6B
+			}
+			div{
+				background-color:#fff;
+			}
+			
+			h1{
+				color:#fff;
+			}
+			.center{
+				text-align:center;
+			}
+			.dimension{
+				height:300px;
+				width:500px;			
+			}
+			.alignment{
+				position:absolute;
+				top:0;
+				bottom:0;
+				left:0;
+				right:0;
+				margin:auto;
+			}
+			.shadow{
+			/* offest-x, offset-y, blur-radius, color*/
+				text-shadow: 5px 5px 3px #000;
+				}
+		</style>
+	</head>
+
+	<body>
+		<h1 class="center shadow">Example displaying text shadow</h1>
+		<div class="dimension alignment">
+			<h2 class="center shadow">My Shadow</h2>
+		</div>
+	</body>
+</html>

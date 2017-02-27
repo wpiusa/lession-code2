@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Transition</title>
+		<style>
+			body{
+				background-color:#244D6B
+			}
+			div{
+				float:left;
+			}
+			
+			h1{
+				color:#fff;
+			}
+			
+			.center{
+				text-align:center;
+			}
+			
+			.container{
+				width:100%;
+				height:250px;
+			}
+			
+			.container>div{
+				height:100%;
+				
+			}
+			
+			.marginBuffer{
+				width:10%				
+			}
+			
+			.demo{
+				width:35%;
+				background-color:#fff;
+				padding:5px;
+				margin:5px;
+				border:2px solid grey;
+			}
+			
+			.demo>div{
+				width:100px;
+				height:50px;
+				background-color:#C8252B;
+				margin:50px;
+			}
+			
+			.transition{
+				-webkit-transition: width 2s; /* For webkit */
+				transition: width 2s;			
+			}
+			
+			.transition:hover{
+				width:200px;
+			}
+			
+			.transitionAll{
+				/* For webkit */
+				-webkit-transition-property: width;
+				-webkit-transition-duration: 2s;
+				-webkit-transition-timing-function: linear;
+				-webkit-transition-delay: 1s;
+				/* Standard syntax */
+				transition-property: width;
+				transition-duration: 2s;
+				transition-timing-function: linear;
+				transition-delay: 1s;
+			}
+			
+			.transitionAll:hover{
+				width:200px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<h1 class="center">Example displaying box sizing</h1>
+		<div class="container">
+			<div class="marginBuffer"></div>
+			<div class="demo">
+				<h3 class="center">Basic Transition</h3>
+				<div class="transition">Hover Me</div>
+			</div>
+			<div class="marginBuffer"></div>
+			<div class="demo">
+				<h3 class="center">Transition with duration,timing-function,delay</h3>
+				<div class="transitionAll">Hover Me</div>
+			</div>
+			<div class="marginBuffer"></div>
+		</div>
+	</body>
+</html>

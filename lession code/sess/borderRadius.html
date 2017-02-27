@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Box Shadow</title>
+		<style>	
+			body{
+				background-color:#244D6B
+			}
+			div{
+				border:2px solid grey;
+				background-color:#fff;
+			}
+			
+			h1{
+				color:#fff;
+			}
+			.center{
+				text-align:center;
+			}
+			.dimension{
+				height:300px;
+				width:500px;			
+			}
+			.alignment{
+				position:absolute;
+				top:0;
+				bottom:0;
+				left:0;
+				right:0;
+				margin:auto;
+			}
+			
+			.borderRadius{
+				border-radius: 25px;
+				/* Webkit based browsers */
+				-webkit-border-radius: 25px;
+				/* For Mozilla browser */
+				-moz-border-radius: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="center">Example displaying border radius</h1>
+		<div class="borderRadius dimension alignment">
+		</div>
+	</body>
+</html>

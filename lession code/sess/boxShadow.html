@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Box Shadow</title>
+		<style>
+			body{
+				background-color:#244D6B
+			}
+			div{
+				background-color:#fff;
+			}
+			
+			h1{
+				color:#fff;
+			}
+			.center{
+				text-align:center;
+			}
+			.dimension{
+				height:300px;
+				width:500px;			
+			}
+			.alignment{
+				position:absolute;
+				top:0;
+				bottom:0;
+				left:0;
+				right:0;
+				margin:auto;
+			}
+			.shadow{
+			/* inset, offest-x, offset-y, blur-radius, spread-radius, color*/
+				box-shadow: inset 10px 10px 5px 2px rgb(255, 68, 0), inset -10px -10px 5px 2px rgb(142, 255, 0);
+				}
+		</style>
+	</head>
+
+	<body>
+		<h1 class="center">Example displaying box shadow</h1>
+		<div class="shadow dimension alignment">
+		</div>
+	</body>
+</html>

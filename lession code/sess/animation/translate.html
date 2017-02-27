@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Translate</title>
+		<style>	
+			body{
+				background-color:#244D6B
+			}
+			div{
+				float:left;
+			}
+			
+			h1{
+				color:#fff;
+			}
+			.center{
+				text-align:center;
+			}
+			
+			.container{
+				width:100%;
+				height:250px;
+			}
+			
+			.container>div{
+				height:100%;
+				
+			}
+			
+			.marginBuffer{
+				width:10%				
+			}
+			
+			.demo{
+				width:35%;
+				background-color:#fff;
+				padding:5px;
+				margin:5px;
+				border:2px solid grey;
+			}
+			
+			#element{
+				width:100px;
+				height:100px;
+				background-color:#C8252B;
+				border:2px solid grey;
+				/* translate(positionX,positionY)*/
+				transform:translate(10px,10px);
+			}
+			
+		</style>
+		<script type="text/javascript">
+			function setTransform(element){
+				var transValue = element.value;
+				document.getElementById('element').style.transform = transValue;
+			}
+		</script>
+	</head>
+	<body>
+		<h1 class="center">Example displaying translate property</h1>
+		<div class="container">
+			<div class="marginBuffer"></div>
+			<div class="demo">
+				<input type="radio" name="transform" value="translate(20px,30px)" onclick="setTransform(this)">Translate (20px,30px) </br>
+				<input type="radio" name="transform" value="translate(40px,40px)" onclick="setTransform(this)">Translate (40px,40px)  </br>
+				<input type="radio" name="transform" value="translate(10px,10px)" onclick="setTransform(this)" checked>Translate (10px,10px) </br>
+			</div>
+			<div class="marginBuffer"></div>
+			<div class="demo">
+				<div id="element"></div>
+			</div>
+			<div class="marginBuffer"></div>
+		</div>
+	</body>
+</html>
